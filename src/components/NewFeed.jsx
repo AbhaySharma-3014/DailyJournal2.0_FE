@@ -99,6 +99,7 @@ function NewFeed() {
                     <h4>Total Blogs  : {postContent?.totalElements} </h4>
 
                 </Col>
+              <p style={{ textAlign: 'center', color: '#1d2b64', fontFamily: 'Poppins, sans-serif', fontSize: '18px', fontWeight: 'bold' }}>Daily Journal</p>
             </Row>
         </div>
 
