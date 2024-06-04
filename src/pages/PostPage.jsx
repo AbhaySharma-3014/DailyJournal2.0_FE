@@ -97,7 +97,7 @@ const PostPage = () => {
                                         <CardText className="mt-3">
                                             <h1>{post.title}</h1>
                                         </CardText>
-                                        <div className="image-container  mt-4 shadow  " style={{ maxWidth: '50%' }}>
+                                        <div style={{ maxWidth: '50%' }}>
                                             <img className="img-fluid" src={BASE_URL + '/api/post/image/' + post.imageName} alt="" />
                                         </div>
                                         <CardText className="mt-5" dangerouslySetInnerHTML={{ __html: post.content }}>
