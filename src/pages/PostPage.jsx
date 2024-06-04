@@ -70,9 +70,10 @@ const PostPage = () => {
 
                 <Row>
 
-                    <Col md={{
-                        size: 12
-                    }}>
+                    <Col 
+                    md={{size: 12}}
+                    style={{color: '#1d2b64', marginBottom: '20px', fontFamily: 'Poppins, sans-serif' }}
+                    >
 
                         <Card className="mt-3 ps-2 border-0 shadow-sm" >
 
@@ -114,13 +115,10 @@ const PostPage = () => {
 
                 <Row className="my-4">
 
-                    <Col md={
-
-                        {
-                            size: 9,
-                            offset: 1
-                        }
-                    }>
+                    <Col 
+                    md={{size: 9, offset: 1}}
+                    style={{color: '#1d2b64', marginBottom: '20px', fontFamily: 'Poppins, sans-serif' }}
+                    >
                         <h3>Comments ( {post ? post.comments.length : 0} )</h3>
 
                         {
