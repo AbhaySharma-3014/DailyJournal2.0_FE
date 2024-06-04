@@ -61,7 +61,7 @@ function NewFeed() {
                     }
                         
 
-                    <Container className='mt-3'>
+                    <Container className='mt-3' style={{color: '#1d2b64', fontFamily: 'Poppins, sans-serif' }}>
                         <Pagination size='sm'>
                             <PaginationItem onClick={() => changePage(postContent.pageNumber-1)} disabled={postContent.pageNumber == 0}>
                                 <PaginationLink previous>
