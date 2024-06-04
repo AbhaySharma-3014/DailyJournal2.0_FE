@@ -6,6 +6,11 @@ import { Link } from 'react-router-dom'
 import { Button, Card, CardBody, CardText } from 'reactstrap'
 import { getCurrentUserDetail, isLoggedIn } from '../auth'
 import userContext from '../context/userContext'
+
+import { toast } from "react-toastify"
+import { deletePostService } from '../services/post-service'
+
+
 function Post({ post = { id: -1, title: "This is default post title", content: "This is default post content" }, deletePost }) {
 
     const userContextData = useContext(userContext)
@@ -26,7 +31,7 @@ function Post({ post = { id: -1, title: "This is default post title", content: "
 
                 <div>
                     <Link className='btn btn-secondary border-0' to={'/posts/' + post.postId}>Read More</Link>
-                    {userContextData.user.login && (user && user.id === post.user.id ? <Button onClick={(event) => deletePost(post)} color='danger' className="ms-2">Delete</Button> : '')}
+                    {userContextData.user.login && (user && user.id === post.user.id ? <Button onClick={(event) => deleteCurrentPost(post)} color='danger' className="ms-2">Delete</Button> : '')}
                     {userContextData.user.login && (user && user.id === post.user.id ? <Button tag={Link} to={`/user/update-blog/${post.postId}`} color='warning' className="ms-2">Update</Button> : '')}
 
                 </div>
@@ -35,5 +40,19 @@ function Post({ post = { id: -1, title: "This is default post title", content: "
 
     )
 }
+
+function deleteCurrentPost(post) {
+    //going to delete post
+    console.log(post)
+
+    deletePostService(post.postId).then(res => {
+        console.log(res)
+        toast.success("post is deleled..")
+    }).catch(error => {
+        console.log(error)
+        toast.error("error in deleting post")
+    })
+}
+
 
 export default Post
