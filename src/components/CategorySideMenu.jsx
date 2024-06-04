@@ -24,7 +24,7 @@ function CategorySideMenu() {
 
     return (
         <div>
-            <ListGroup style={{ color: '#1d2b64', marginBottom: '20px', fontFamily: 'Poppins, sans-serif' ,textAlign:'center', maxWidth: '1200px', width: '90%', background: 'rgba(255, 255, 255, 0.8)', padding: '10px', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)', borderRadius: '15px', transition: 'transform 0.3s' }}>
+            <ListGroup style={{ color: '#1d2b64', marginLeft:'20px', marginBottom: '20px', fontFamily: 'Poppins, sans-serif' ,textAlign:'center', maxWidth: '1200px', width: '90%', background: 'rgba(255, 255, 255, 0.8)', padding: '10px', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)', borderRadius: '15px', transition: 'transform 0.3s' }}>
                 <h5 className='border-0'>  All Categories </h5>
                 <ListGroupItem tag={Link} to="/" action={true} className='border-0'>
                     All Blogs
