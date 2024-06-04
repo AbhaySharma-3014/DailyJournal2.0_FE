@@ -192,6 +192,8 @@ const Signup = () => {
             </Card>
           </Col>
         </Row>
+        <br></br>    
+        <br></br>   
         <p style={{ textAlign: 'center', color: '#1d2b64', fontFamily: 'Poppins, sans-serif', fontSize: '18px', fontWeight: 'bold' }}>Daily Journal</p>
       </Container>
     </Base>
