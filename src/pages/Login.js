@@ -93,7 +93,7 @@ const Login = () => {
 
   return (
     <Base >
-      <Container style={{ height: '100vh'}}>
+      <Container style={{ color: '#1d2b64', fontFamily: 'Poppins, sans-serif' ,height: '100vh'}}>
         <Row className="mt-4">
           <Col
             sm={{
