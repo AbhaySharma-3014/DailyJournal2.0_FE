@@ -15,12 +15,8 @@ const ContactUs = () => {
     <userContext.Consumer>
       {(object) => (
         <Base>
-          {/* <h2>Contact Us</h2>
-          <p>This is Contact Us Page</p>
-          {console.log(object)}
-      */}
           <div style={{ fontFamily: 'Roboto, sans-serif', background: 'linear-gradient(to right, #f8cdda, #1d2b64)', minHeight: '92vh', margin: 0, padding: '50px 0', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <div style={{ maxWidth: '1200px', width: '60%', background: 'rgba(255, 255, 255, 0.8)', padding: '40px', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)', borderRadius: '15px', transition: 'transform 0.3s' }}>
+            <div style={{ maxWidth: '1200px', width: '70%', background: 'rgba(255, 255, 255, 0.8)', padding: '40px', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)', borderRadius: '15px', transition: 'transform 0.3s' }}>
               <h1 style={{ textAlign: 'center', color: '#1d2b64', marginBottom: '20px', fontFamily: 'Poppins, sans-serif' }}>Contact Us</h1>
               <p style={{ textAlign: 'center', color: '#666', fontSize: '18px', marginBottom: '40px' }}>We'd love to hear from you! Use the information below to get in touch with us.</p>
 
