@@ -115,11 +115,11 @@ const AddPost = () => {
 
     return (
         <div className="wrapper" >
-            <Card color="light" style={{ margin:'5%' , maxWidth: '1200px', width: '90%', background: 'rgba(255, 255, 255, 0.8)', padding: '40px', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)', borderRadius: '15px', transition: 'transform 0.3s' }}>
+            <Card color="light" style={{ fontFamily: 'Poppins, sans-serif', margin:'5%' , maxWidth: '1200px', width: '90%', background: 'rgba(255, 255, 255, 0.8)', padding: '40px', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)', borderRadius: '15px', transition: 'transform 0.3s' }}>
               <CardBody  >
 
                     {/* {JSON.stringify(post)} */}
-                    <h3>What going in your mind ?</h3>
+                    <h3>Jot down anything you like</h3>
                     <Form onSubmit={createPost}>
                         <div className="my-3">
                             <Label for="title" >Post title</Label>
