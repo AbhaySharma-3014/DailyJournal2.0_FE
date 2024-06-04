@@ -83,7 +83,7 @@ function UpdateBlog() {
 
             <div className="wrapper">
 
-                <Card className="shadow-sm  border-0 mt-2">
+                <Card className="shadow-sm  border-0 mt-2" style={{ color: '#1d2b64', fontFamily: 'Poppins, sans-serif' ,height: '100vh'}}>
                     <CardBody>
 
                         <h3>Update post from here !!</h3>
