@@ -84,15 +84,12 @@ const AddPost = () => {
 
 
             uploadPostImage(image,data.postId).then(data=>{
-                toast.success("Image Uploaded !!")
             }).catch(error=>{
-                toast.error("Error in uploading image")
-                console.log(error)
             })
 
 
 
-            toast.success("Post Created !!")
+            toast.success("Post SuccessFully Created !!")
             // console.log(post)
             setPost({
                 title: '',
@@ -100,7 +97,7 @@ const AddPost = () => {
                 categoryId: ''
             })
         }).catch((error) => {
-            toast.error("Post not created due to some error !!")
+            toast.error("Post not created due to some error")
             // console.log(error)
         })
 
