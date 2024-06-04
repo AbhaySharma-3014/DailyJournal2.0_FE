@@ -51,6 +51,7 @@ const CustomNavbar = () => {
                 expand="md"
                 fixed=""
                 className="px-5"
+                style={{color: '#1d2b64', fontFamily: 'Poppins, sans-serif' }}
             >
                 <NavbarBrand tag={ReactLink} to="/">
                     Daily Journal
