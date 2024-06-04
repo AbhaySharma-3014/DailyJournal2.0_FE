@@ -20,7 +20,7 @@ const ViewUserProfile = ({ user, updateProfileClick }) => {
                 <h3 className='text-uppercase'>User Information</h3>
 
                 <Container className='text-center'>
-                    <img style={{ maxWidth: '200px', maxHeight: '200px' }} src={user.image ? user.image : 'https://cdn.dribbble.com/users/6142/screenshots/5679189/media/1b96ad1f07feee81fa83c877a1e350ce.png?compress=1&resize=400x300&vertical=top'} alt="user profile picture" className='img-fluid  rounded-circle' />
+                    <img style={{ maxWidth: '200px', maxHeight: '200px' }} src={user.image ? user.image : 'https://upload.wikimedia.org/wikipedia/commons/b/b5/Windows_10_Default_Profile_Picture.svg?compress=1&resize=400x300&vertical=top'} alt="user profile picture" className='img-fluid  rounded-circle' />
                 </Container>
                 <Table responsive striped hover bordered={true} className='text-center mt-5'>
                     <tbody>
