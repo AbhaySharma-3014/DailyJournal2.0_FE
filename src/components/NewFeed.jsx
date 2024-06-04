@@ -19,7 +19,7 @@ function NewFeed() {
     })
 
     useEffect(() => {
-        loadAllPosts(0,5).then(data => {
+        loadAllPosts(0,3).then(data => {
         setPostContent(data)
     }).catch(error => {
         toast.error("Error in loading posts")
