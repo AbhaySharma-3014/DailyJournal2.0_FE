@@ -15,7 +15,7 @@ const ViewUserProfile = ({ user, updateProfileClick }) => {
     return (
         
 
-        <Card className='border-0 shadow-sm mt-3' style={{ width: '90%', background: 'rgba(255, 255, 255, 0.8)', padding: '30px', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)', borderRadius: '15px', transition: 'transform 0.3s' }}>
+        <Card className='border-0 shadow-sm mt-3' style={{ fontFamily: 'Poppins, sans-serif' ,width: '90%', background: 'rgba(255, 255, 255, 0.8)', padding: '30px', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)', borderRadius: '15px', transition: 'transform 0.3s' }}>
             <CardBody>
                 <h3 className='text-uppercase'>User Information</h3>
 
