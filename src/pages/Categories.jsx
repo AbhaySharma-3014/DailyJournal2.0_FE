@@ -44,7 +44,7 @@ function Categories() {
 
     return (
         <Base>
-            <Container className="mt-3" style={{height:'100vh', color: '#1d2b64', marginBottom: '20px', fontFamily: 'Poppins, sans-serif' }} >
+            <Container className="mt-3" style={{color: '#1d2b64', marginBottom: '20px', fontFamily: 'Poppins, sans-serif' }} >
                 <Row>
                     <Col md={2} className="pt-5">
                         <CategorySideMenu />
