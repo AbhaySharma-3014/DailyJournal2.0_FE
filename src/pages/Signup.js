@@ -85,7 +85,7 @@ const Signup = () => {
 
   return (
     <Base>
-      <Container style={{ color: '#1d2b64', fontFamily: 'Poppins, sans-serif' ,height: '100vh'}}>
+      <Container style={{ color: '#1d2b64', fontFamily: 'Poppins, sans-serif'}}>
         <Row className="mt-4">
           {/* { JSON.stringify(data) } */}
           <Col sm={{ size: 6, offset: 3 }}>
