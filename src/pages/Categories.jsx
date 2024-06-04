@@ -44,8 +44,7 @@ function Categories() {
 
     return (
         <Base>
-
-            <Container className="mt-3" style={{height:'100vh'}} >
+            <Container className="mt-3" style={{height:'100vh', color: '#1d2b64', marginBottom: '20px', fontFamily: 'Poppins, sans-serif' }} >
                 <Row>
                     <Col md={2} className="pt-5">
                         <CategorySideMenu />
@@ -60,9 +59,9 @@ function Categories() {
                             })
                         }
 
-                        {posts.length <= 0 ? <h1>No post in this category</h1> : ''}
+                        {posts.length <= 0 ? <h1>Oops!! No Post found in this category</h1> : ''}
                         <br></br>
-                        <h4>Total Blogs in this Category : {} ( {posts.length} )</h4>
+                        {posts.length > 0 ? <h4 style={{color: '#1d2b64', fontFamily: 'Poppins, sans-serif'}}>Total Blogs in this Category : {} ( {posts.length} )</h4>:''}
                     </Col>
                 </Row>
             </Container>
