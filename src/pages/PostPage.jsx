@@ -30,7 +30,8 @@ const PostPage = () => {
 
     const printDate = (numbers) => {
 
-        return new Date(numbers).toLocaleDateString()
+        // return new Date(numbers).toLocaleDateString()
+        return numbers
     }
 
     const submitPost=()=>{
