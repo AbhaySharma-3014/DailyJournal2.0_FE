@@ -28,7 +28,7 @@ function NewFeed() {
 
 
 
-    const changePage = (pageNumber = 0, pageSize = 5) => {
+    const changePage = (pageNumber = 0, pageSize = 3) => {
         if (pageNumber > postContent.pageNumber && postContent.lastPage) {
             return
         }
