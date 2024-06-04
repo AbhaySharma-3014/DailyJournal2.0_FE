@@ -21,7 +21,7 @@ function Post({ post = { id: -1, title: "This is default post title", content: "
     }, [])
     return (
 
-        <Card className='border-0 shadow-sm mt-3' style={{color: '#1d2b64', marginBottom: '20px', fontFamily: 'Poppins, sans-serif' ,maxWidth: '1200px', width: '90%', background: 'rgba(255, 255, 255, 0.8)', padding: '10px', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)', borderRadius: '15px', transition: 'transform 0.3s' }}>
+        <Card className='border-0 shadow-sm mt-3' style={{color: '#1d2b64', marginBottom: '20px', fontFamily: 'Poppins, sans-serif' ,maxWidth: '1200px', width: '100%', background: 'rgba(255, 255, 255, 0.8)', padding: '10px', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)', borderRadius: '15px', transition: 'transform 0.3s' }}>
             <CardBody>
                 <h3>{post.title}</h3>
                 <CardText dangerouslySetInnerHTML={{ __html: post.content.substring(0, 70) + "...." }}>
