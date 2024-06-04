@@ -45,7 +45,7 @@ function NewFeed() {
 
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" style={{background: 'linear-gradient(to right, #f8cdda, #1d2b64)}}>
             <Row>
                 <Col md={
                     {
