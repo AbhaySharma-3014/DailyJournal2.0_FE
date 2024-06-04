@@ -7,7 +7,7 @@ import NewFeed from "../components/NewFeed";
 const Home = () => {
   return (
     <Base>
-      <Container className="mt-3" style={{ height: '100vh'}}>
+      <Container className="mt-3" style={{ height: '100vh', background: 'linear-gradient(to right, #f8cdda, #1d2b64)'}}>
         <Row>
           <Col md={2} className="pt-5">
             <CategorySideMenu />
