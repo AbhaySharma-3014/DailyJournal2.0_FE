@@ -9,6 +9,7 @@ import userContext from '../context/userContext'
 
 import { toast } from "react-toastify"
 import { deletePostService } from '../services/post-service'
+import { useNavigate } from "react-router-dom";
 
 
 function Post({ post = { id: -1, title: "This is default post title", content: "This is default post content" }, deletePost }) {
@@ -47,6 +48,8 @@ function deleteCurrentPost(post) {
 
     deletePostService(post.postId).then(res => {
         console.log(res)
+        const navigate = useNavigate()
+        navigate("/")
         toast.success("post is deleled..")
     }).catch(error => {
         console.log(error)
