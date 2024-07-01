@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getToken } from "../auth";
 
-export const BASE_URL = "https://dailyjournal2.up.railway.app";
+export const BASE_URL = "https://dailyjournal-qxeq.onrender.com";
 
 export const myAxios = axios.create({
   baseURL: BASE_URL,
