@@ -7,7 +7,7 @@ import axios from 'axios';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <App />
+    <App />,
   const url = 'https://dailyjournal-qxeq.onrender.com/api/posts'; // Replace with your Render URL
   const interval = 30000; // Interval in milliseconds (30 seconds)
   
